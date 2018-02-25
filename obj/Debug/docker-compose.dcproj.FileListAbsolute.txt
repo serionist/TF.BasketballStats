@@ -1,0 +1,2 @@
+c:\users\serionist.virtdb\source\repos\TF.BasketballStats\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Workspaces\TF\TF.BasketballStats\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

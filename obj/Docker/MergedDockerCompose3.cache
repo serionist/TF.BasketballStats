@@ -1,0 +1,23 @@
+services:
+  tf.basketballstats:
+    build:
+      args:
+        source: obj/Docker/empty/
+      context: D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats
+      dockerfile: Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+    image: tf.basketballstats:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 80/tcp
+    volumes:
+    - D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats:/app:rw
+    - C:\Users\Serionist.VIRTDB\vsdbg:/remote_debugger:ro
+version: '3.0'

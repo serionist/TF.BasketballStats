@@ -1,0 +1,11 @@
+services:
+  tf.basketballstats:
+    build:
+      context: D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: tf.basketballstats
+    ports:
+    - 80/tcp
+version: '3.0'

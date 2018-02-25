@@ -1,0 +1,11 @@
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\bin\Release\netcoreapp2.0\TF.BasketballStats.deps.json
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\bin\Release\netcoreapp2.0\TF.BasketballStats.runtimeconfig.json
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\bin\Release\netcoreapp2.0\TF.BasketballStats.runtimeconfig.dev.json
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\bin\Release\netcoreapp2.0\TF.BasketballStats.dll
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\bin\Release\netcoreapp2.0\TF.BasketballStats.pdb
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.csprojResolveAssemblyReference.cache
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.csproj.CoreCompileInputs.cache
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.AssemblyInfoInputs.cache
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.AssemblyInfo.cs
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.dll
+D:\Workspaces\TF\TF.BasketballStats\TF.BasketballStats\obj\Release\netcoreapp2.0\TF.BasketballStats.pdb

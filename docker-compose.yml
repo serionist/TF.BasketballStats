@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tf.basketballstats:
+    image: tf.basketballstats
+    build:
+      context: ./TF.BasketballStats
+      dockerfile: Dockerfile
