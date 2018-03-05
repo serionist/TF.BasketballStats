@@ -12,9 +12,10 @@ using TF.BasketballStats.Database;
 namespace TF.BasketballStats.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20180228190542_third")]
+    partial class third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,6 +40,8 @@ namespace TF.BasketballStats.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<long>("GameTimeMS");
+
                     b.Property<long>("GameTimeStamp");
 
                     b.Property<int>("MatchId");
@@ -46,8 +49,6 @@ namespace TF.BasketballStats.Migrations
                     b.Property<int?>("PlayerId");
 
                     b.Property<int>("Quarter");
-
-                    b.Property<long>("QuarterTimeMS");
 
                     b.Property<DateTime>("Timestamp");
 

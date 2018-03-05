@@ -23,18 +23,19 @@ namespace TF.BasketballStats.Controllers
         {
             return Json(DB.Matches.Include(e => e.OpponentClub), new JsonSerializerSettings(){Formatting = Formatting.Indented});
         }
+        
         [HttpGet("{id:int}")]
-        [ProducesResponseType(typeof(Match[]), 200)]
+        [ProducesResponseType(typeof(Match), 200)]
         [ProducesResponseType(404)]
         public IActionResult GetMatch(int id)
         {
-            var model = DB.Matches.Include(e => e.OpponentClub).FirstOrDefault(e => e.Id == id);
+            var model = DB.Matches.Find(id);
             if (model == null)
                 return NotFound();
             return Json(model, new JsonSerializerSettings() { Formatting = Formatting.Indented });
         }
         [HttpPost("")]
-        [ProducesResponseType(typeof(Match[]), 200)]
+        [ProducesResponseType(typeof(Match), 200)]
         [ProducesResponseType(404)]
         public IActionResult AddMatch([FromBody] MatchInputJson json)
         {

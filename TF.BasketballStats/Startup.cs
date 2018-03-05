@@ -29,7 +29,7 @@ namespace TF.BasketballStats
         {
             services.AddLogging(l => l.AddConfiguration(Configuration).AddAzureWebAppDiagnostics());
             services.AddMvc();
-            services.AddDbContext<DatabaseContext>(e => e.UseSqlite(Configuration.GetConnectionString("main")));
+            services.AddDbContext<DatabaseContext>(e => e.UseSqlServer(Configuration.GetConnectionString("main")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "TF Basketball api", Version = "v1" });
@@ -50,7 +50,7 @@ namespace TF.BasketballStats
             {
                 
                 scop.ServiceProvider.GetService<DatabaseContext>().Database.EnsureCreated();
-                scop.ServiceProvider.GetService<DatabaseContext>().Database.Migrate();
+              //  scop.ServiceProvider.GetService<DatabaseContext>().Database.Migrate();
             }
             app.UseSwagger();
 

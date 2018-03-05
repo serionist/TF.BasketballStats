@@ -13,6 +13,8 @@ namespace TF.BasketballStats
         TimerStart,
         TimeoutStart,
         TimeoutEnd,
+        PlayerEnter,
+        PlayerLeave,
         Fault,
         ForcedFault,
         NearTwoPointAttempt,
@@ -28,7 +30,8 @@ namespace TF.BasketballStats
         Steal,
         FreeThrowAttempt,
         FreeThrowMade,
-        Turnover
+        Turnover,
+        GameEnd
     }
    
 }

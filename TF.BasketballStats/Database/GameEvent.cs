@@ -23,7 +23,9 @@ namespace TF.BasketballStats.Database
         [Required]
         public GameEventType Type { get; set; }
         [Required]
-        public TimeSpan GameTime { get; set; }
+        public long QuarterTimeMS { get; set; }
+        [Required]
+        public long GameTimeStamp { get; set; }
         [Required]
         public DateTime Timestamp { get; set; }
     }
